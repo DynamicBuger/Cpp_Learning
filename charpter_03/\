@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+void inch2feetandinch(int inch);
+int height = 0;
+int feet = 0;
+int inch = 0;
+int main()
+{
+    cout << "Enter height(inch):__\b\b";
+    cin >> inch;
+    inch2feetandinch(inch);
+    cout << inch << " inches = " << feet \
+    << " feet and " << inch << " inches.\n";
+    cout << inch % 12 << endl;
+    return 0;
+}
+
+void inch2feetandinch(int inch)
+{
+    feet = inch / 12;
+    inch = inch % 12;
+}
